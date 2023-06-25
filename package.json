@@ -1,0 +1,43 @@
+{
+  "name": "forge2d",
+  "version": "1.0.0-beta",
+  "description": "Forge2D - A powerful, simple, crafty, 2D Game Engine for the web.",
+  "keywords": [
+    "forge",
+    "2d",
+    "forge2d",
+    "game",
+    "game engine",
+    "powerful",
+    "simple",
+    "easy",
+    "ts",
+    "js",
+    "canvas",
+    "webgl",
+    "physics",
+    "crafty",
+    "web"
+  ],
+  "main": "./src/index.ts",
+  "repository": "https://github.com/ksplatdev/Forge2D.git",
+  "author": "Bleart Emini",
+  "license": "MIT",
+  "scripts": {
+    "format": "npx prettier --config .prettierrc --write \"src/**/*.ts\"",
+    "format:watch": "npx onchange \"src/**/*.ts\" \"*.json\" \"*.md\" \"examples/**/*.ts\" -- prettier --write --ignore-unknown {{changed}}",
+    "lint": "npx eslint -c .eslintrc.json src/",
+    "lint:watch": "npx onchange \"src/**/*.ts\"  \"examples/**/*.ts\" -- eslint -c .eslintrc.json --fix {{changed}}"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "onchange": "^7.1.0",
+    "prettier": "^2.4.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {}
+}
