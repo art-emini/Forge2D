@@ -5,5 +5,7 @@ export default class Game {
   public readonly scenes: Scene[] = [];
   public currentScene?: Scene;
 
-  constructor(public readonly config?: Forge2D.Types.Config) {}
+  constructor(public readonly config?: Forge2D.Types.Config) {
+    console.log(`Powered by Forge2D MIT LICENSE`);
+  }
 }
