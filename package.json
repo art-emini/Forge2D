@@ -30,6 +30,7 @@
     "lint:watch": "npx onchange \"src/**/*.ts\"  \"examples/**/*.ts\" -- eslint -c .eslintrc.json --fix {{changed}}"
   },
   "devDependencies": {
+    "@types/matter-js": "^0.18.5",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "eslint": "^8.2.0",
@@ -39,5 +40,8 @@
     "prettier": "^2.4.1",
     "typescript": "^5.0.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "matter-js": "^0.19.0",
+    "pixi.js": "^7.2.4"
+  }
 }
