@@ -33,7 +33,7 @@ export default class CanvasRenderer extends BaseRenderer {
     h: number,
     texture: Texture
   ) {
-    this.ctx.drawImage(texture.value, x, y, w, h);
+    this.ctx.drawImage(texture.asset.value, x, y, w, h);
   }
   public drawImageFromSheet(
     x: number,
@@ -47,7 +47,7 @@ export default class CanvasRenderer extends BaseRenderer {
     }
 
     this.ctx.drawImage(
-      texture.value, // image
+      texture.asset.value, // image
       col * texture.frameScale.w, // source x
       row * texture.frameScale.h, // source y
       texture.frameScale.w, // source width

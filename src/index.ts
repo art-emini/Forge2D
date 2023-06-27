@@ -15,6 +15,11 @@ namespace Forge2D {
       scale?: Math.Scale;
     }
 
+    export namespace AssetLoader {
+      export type Type = 'image' | 'audio' | 'font' | 'json';
+      export type LoadMassArray = [type: Type, key: string, src: string][]; // type-key-src pair
+    }
+
     export namespace Misc {
       export enum Renderer {
         Canvas = 0,

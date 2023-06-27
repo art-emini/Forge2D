@@ -30,6 +30,7 @@
     "release",
     "webpack.config.js",
     "webpack.window.config.js",
-    "test/**/*"
+    "test/**/*",
+    "node_modules"
   ]
 }
