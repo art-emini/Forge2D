@@ -30,6 +30,10 @@ export default class Game {
     console.log(`Powered by Forge2D || MIT LICENSE ||`);
 
     const canvas = getCanvas(this.config?.canvas);
+    if (this.config?.scale) {
+      canvas.width = this.config.scale.w;
+      canvas.height = this.config.scale.h;
+    }
 
     this.PIXI = {
       App: new PIXI.Application({ view: canvas }),

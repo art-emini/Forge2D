@@ -1,4 +1,8 @@
+import GameClass from './core/game';
+
 namespace Forge2D {
+  export const Game = GameClass;
+
   export namespace Types {
     export interface Config {
       renderer?: Misc.Renderer | undefined;
